@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Calum Jarvis</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <h1>CJarvis</h1>
+        </div>
+        <div class="navbar-list">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>      
+            </ul>
+        </div>
+        <div class="navbar-buttons">
+            <button class="download-cv"><a class="dlbtn" href="./CV.pdf" download="CalumJarvisCV">Download CV</a></button>   
+        </div>
+        <div class="hamburger">
+            <svg viewbox="0 0 100 80" width="30" height="30">
+                <rect width="100" height="10"></rect>
+                <rect y="30" width="100" height="10"></rect>
+                <rect y="60" width="100" height="10"></rect>
+            </svg>
+        </div>  
+    </nav>
+    <div class="section home" id="home">
+        <div class="video-bg">
+            <video src="./video2.mp4" muted autoplay loop></video>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="header">Calum</h1>
+                <h1 class="header header1">Jarvis</h1>
+                <h2 class="p2">Student & Web Developer</h2>
+                <div class="hero-buttons">
+                        <button class="view-my-work"><a class="dlbtn" href="#projects">View my work</a></button>   
+                    <div class="icons">
+                        <a class="icon" href="https://github.com/caluhm" target="_blank">
+                            <img src="./iconmonstr-github-1.svg" alt="Github">
+                        </a>
+                        <a class="icon" href="https://www.linkedin.com/in/calum-jarvis/" target="_blank">
+                            <img src="./iconmonstr-linkedin-5.svg" alt="Github">
+                        </a>
+                        <a class="icon" href="https://dribbble.com/caluhm" target="_blank">
+                            <img src="./iconmonstr-dribbble-1.svg" alt="Github">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scrolldown">
+            <a class="scroll" href="#about">scroll
+                <img src="./down-arrow-svgrepo-com.svg" alt="Down Arrow">
+            </a>
+        </div>
+    </div>
+    <div class="about" id="about">
+        <div class="from-education">
+            <div class="from">
+                <img src="./home-svgrepo-com.svg" alt="">
+                <h3>Manchester, England.</h3>
+            </div>
+            <div class="education">
+                <div class="uniicon">
+                    <img src="./graduation-university-ceremony-education-graduate-svgrepo-com.svg" alt="">
+                </div>
+                <h3>University of Huddersfield.</h3>
+            </div>
+        </div>
+    </div>
+    <div class="skills" id="skills">
+        <h3>My Skills</h3>
+        <div class="experience-bars">
+            <p>HTML</p>
+                <div class="bar">
+                    <div class="skill html">5 Months</div>
+                </div>
+            <p>CSS</p>
+                <div class="bar">
+                    <div class="skill css">4 Months</div>
+                </div>
+            <p>JavaScript</p>
+                <div class="bar">
+                    <div class="skill js">3 months</div>
+                </div>
+            <p>ReactJS</p>
+                <div class="bar">
+                    <div class="skill react">2 months</div>
+                </div>
+        </div>
+    </div>
+    <div class="projects" id="projects">
+        <h3>My Projects</h3>
+        <div class="card-container">
+            <div class="project-cards">
+            <div class="card">
+                <div class="card-header">
+                    Portfolio Website
+                </div>
+                <div class="card-body">
+                    The website you are currently viewing, my personal portfolio. I made my portfolio  using HTML, CSS and GSAP for animations.
+                </div>
+                <div class="card-footer">
+                    <button class="view-my-work"><a class="dlbtn" href="https://calumjarvis.com/" target="__blank">Live Site</a></button>
+                    <a class="icon" href="https://github.com/caluhm" target="_blank">
+                        <img src="./iconmonstr-github-1.svg" alt="Github">
+                    </a> 
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    UTrack App
+                </div>
+                <div class="card-body">
+                    A simple deadline tracker application created for a university project. This was made using mainly ReactJS & Bootstrap.
+                </div>
+                <div class="card-footer">
+                    <button class="view-my-work"><a class="dlbtn" href="https://utrack.netlify.app/" target="__blank">Live Site</a></button>
+                    <a class="icon" href="https://github.com/caluhm" target="_blank">
+                        <img src="./iconmonstr-github-1.svg" alt="Github">
+                    </a> 
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js" integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        window.onbeforeunload = function () {
+            window.scrollTo(0,0);
+        };
+        let tl = gsap.timeline({defaults: { ease: "power4.inOut", duration: 2}})
+
+        tl.to('h2', {'clip-path': 'polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%)', delay: 0, opacity: 1, duration: 3 })
+
+        tl.to('.hero-buttons', {'clip-path': 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)', opacity: 1, duration: 3 })
+
+        tl.to('.scroll', {opacity: 1, duration: 1 })
+
+
+        TweenMax.from(".header", 2.5, {
+        delay: 0,
+        opacity: 0,
+        y: 100,
+        ease: Power3.easeInOut
+        }); 
+
+        TweenMax.from(".navbar", 2.5, {
+        delay: 3.8,
+        opacity: 0,
+        y: -100,
+        ease: Power3.easeInOut
+        }); 
+    </script>
+</body>
+</html>
