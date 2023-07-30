@@ -13,14 +13,22 @@ export default function HeroSection() {
       const winWidth = window.innerWidth;
       const winHeight = window.innerHeight;
 
-      const mouseX = Math.round((e.pageX / winWidth) * 100);
-      const mouseY = Math.round((e.pageY / winHeight) * 100);
+      let mouseX = winWidth / 2; // Default to center of the screen
+      let mouseY = winHeight / 2; // Default to center of the screen
 
-      if (appRef) {
+      if (e.pageX !== undefined && e.pageY !== undefined) {
+        mouseX = Math.round((e.pageX / winWidth) * 100);
+        mouseY = Math.round((e.pageY / winHeight) * 100);
+      }
+
+      if (appRef.current) {
         appRef.current.style.setProperty("--mouse-x", mouseX.toString() + "%");
         appRef.current.style.setProperty("--mouse-y", mouseY.toString() + "%");
       }
     };
+
+    // Call moveGradient manually to set initial values on component mount
+    moveGradient({});
 
     document.addEventListener("mousemove", moveGradient);
     return function cleanup() {
