@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import { useState } from "react";
 import SectionContainer from "./SectionContainer";
@@ -9,15 +9,19 @@ export default function SkillsSection() {
   const [isBackEndSelected, setIsBackEndSelected] = useState(true);
   const [isExtrasSelected, setIsExtrasSelected] = useState(true);
   return (
-    <SectionContainer id="skills">
-      <div className="flex h-full w-full flex-col items-center justify-center pt-8">
+    <SectionContainer
+      id="skills"
+      customHeight={"min-h-screen sm:min-h-[75vh]"}
+      colouredBg
+    >
+      <div className="flex h-full w-full flex-col items-center justify-center pt-6 sm:pt-12">
         <h3 className="section-header">Skills</h3>
         <div className="flex w-full flex-col items-center justify-center gap-6 px-3 py-16 sm:px-5">
           <aside className="flex flex-row gap-4">
             <button
-              className={`rounded-md border-2 border-sky-500 bg-sky-500 px-4 py-2 text-center text-lg font-medium text-neutral-950 dark:border-indigo-500 dark:bg-indigo-500 dark:text-neutral-50 ${
+              className={`rounded-md border-2 border-sky-500 bg-sky-500 px-3 py-1 text-center text-lg font-medium text-neutral-950 dark:border-indigo-500 dark:bg-indigo-500 dark:text-neutral-50 sm:px-4 sm:py-2 ${
                 isFrontEndSelected
-                  ? "border-sky-400 bg-sky-500 dark:border-indigo-600 dark:bg-indigo-500"
+                  ? "border-sky-300 bg-sky-500 dark:border-indigo-300 dark:bg-indigo-500"
                   : "bg-transparent dark:bg-transparent"
               }`}
               onClick={() => setIsFrontEndSelected(!isFrontEndSelected)}
@@ -25,9 +29,9 @@ export default function SkillsSection() {
               Frontend
             </button>
             <button
-              className={`rounded-md border-2 border-sky-500 bg-sky-500 px-4 py-2 text-center text-lg font-medium text-neutral-950 dark:border-indigo-500 dark:bg-indigo-500 dark:text-neutral-50 ${
+              className={`rounded-md border-2 border-sky-500 bg-sky-500 px-3 py-1 text-center text-lg font-medium text-neutral-950 dark:border-indigo-500 dark:bg-indigo-500 dark:text-neutral-50 sm:px-4 sm:py-2 ${
                 isBackEndSelected
-                  ? "border-sky-400 bg-sky-500 dark:border-indigo-600 dark:bg-indigo-500"
+                  ? "border-sky-300 bg-sky-500 dark:border-indigo-300 dark:bg-indigo-500"
                   : "bg-transparent dark:bg-transparent"
               }`}
               onClick={() => setIsBackEndSelected(!isBackEndSelected)}
@@ -35,9 +39,9 @@ export default function SkillsSection() {
               Backend
             </button>
             <button
-              className={`rounded-md border-2 border-sky-500 bg-sky-500 px-4 py-2 text-center text-lg font-medium text-neutral-950 dark:border-indigo-500 dark:bg-indigo-500 dark:text-neutral-50 ${
+              className={`rounded-md border-2 border-sky-500 bg-sky-500 px-3 py-1 text-center text-lg font-medium text-neutral-950 dark:border-indigo-500 dark:bg-indigo-500 dark:text-neutral-50 sm:px-4 sm:py-2 ${
                 isExtrasSelected
-                  ? "border-sky-400 bg-sky-500 dark:border-indigo-600 dark:bg-indigo-500"
+                  ? "border-sky-300 bg-sky-500 dark:border-indigo-300 dark:bg-indigo-500"
                   : "bg-transparent dark:bg-transparent"
               }`}
               onClick={() => setIsExtrasSelected(!isExtrasSelected)}
@@ -88,4 +92,4 @@ export default function SkillsSection() {
       </div>
     </SectionContainer>
   );
-};
+}

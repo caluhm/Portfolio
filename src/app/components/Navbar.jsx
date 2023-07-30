@@ -11,7 +11,10 @@ export default function Navbar({ theme, handleThemeSwitch }) {
     <nav className="fixed top-0 z-20 w-full border-b border-neutral-300 bg-neutral-200 bg-opacity-30 backdrop-blur-sm backdrop-filter dark:border-neutral-600 dark:bg-neutral-700 dark:bg-opacity-30">
       <div className="mx-auto max-w-6xl px-4">
         <div className="flex h-16 items-center justify-between">
-          <a href="#home" className="nav-item text-xl font-semibold">
+          <a
+            href="/"
+            className="text-xl font-semibold text-neutral-950 dark:text-neutral-50"
+          >
             CJarvis
           </a>
           <div className="hidden sm:block">

@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import { useRef, useEffect } from "react";
 
@@ -39,25 +39,21 @@ export default function HeroSection() {
         className="bg-radial-pattern dark:bg-radial-pattern-dark relative z-10 flex h-screen w-full flex-col items-center justify-center gap-4 px-5"
       >
         <div className="flex">
-          <div className="flex flex-col gap-5 sm:max-w-3xl">
-            <div className="flex flex-col gap-2">
-              <h1 className="text-center text-5xl font-bold text-neutral-950 dark:text-neutral-50 sm:text-left sm:text-6xl">
-                Calum Jarvis
+          <div className="flex flex-col gap-6 sm:max-w-3xl">
+            <div className="flex flex-col gap-3">
+              <h1 className="pb-2 text-center text-4xl font-extrabold text-neutral-950 dark:text-neutral-50 sm:text-7xl">
+                calumjarvis.dev
               </h1>
-              <h2 className="text-center text-lg font-medium text-sky-500 dark:text-indigo-500 sm:text-left sm:text-2xl">
-                Hello, I am a{" "}
-                <span className="bg-gradient-to-r from-neutral-700 to-neutral-500 bg-clip-text font-bold text-transparent dark:from-neutral-300 dark:to-neutral-100">
-                  {" "}
-                  Front-End Developer{" "}
-                </span>{" "}
-                from 📍 <span className="underline"> Manchester, England.</span>
+              <h2 className="text-center text-base font-semibold text-neutral-800 dark:text-neutral-300 sm:text-2xl">
+                👋 Hello, I'm a <strong>Front-End Developer</strong> and{" "}
+                Computer Science Graduate based in 📍 Manchester, England.
               </h2>
-              <h3 className="text-md text-center font-medium text-neutral-700 dark:text-neutral-300 sm:text-left sm:text-xl">
+              <h3 className="text-center text-sm font-medium text-neutral-800 dark:text-neutral-300 sm:text-xl">
                 I enjoy creating stuff that lives on the internet, whether that
                 be websites, applications, or anything in between.
               </h3>
             </div>
-            <div className="flex flex-col items-center justify-center gap-4 text-sm font-medium text-neutral-950 dark:text-neutral-50 sm:flex-row sm:justify-start sm:gap-3 sm:text-base">
+            <div className="flex flex-col items-center justify-center gap-4 text-sm font-medium text-neutral-950 dark:text-neutral-50 sm:flex-row sm:gap-3 sm:text-base">
               <a className="flex w-fit cursor-pointer flex-row items-center justify-center rounded-full bg-sky-500 px-4 py-2 drop-shadow-md transition-colors duration-200 ease-in-out hover:bg-sky-400 dark:bg-indigo-500 dark:hover:bg-indigo-600">
                 Download CV
                 <span className="ml-2">
@@ -79,4 +75,4 @@ export default function HeroSection() {
       </section>
     </>
   );
-};
+}
