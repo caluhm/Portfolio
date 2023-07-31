@@ -98,23 +98,28 @@ export default function AboutSection({ movementX, movementY }) {
           <h3 className="section-header">About Me</h3>
           <div className="flex flex-col items-center justify-center gap-4 px-3 text-center text-sm font-medium leading-6 text-neutral-950 dark:text-neutral-50 md:px-6 md:text-base lg:px-9 xl:px-12">
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi
-              officiis facilis eius dolor natus expedita sequi sunt quos, vitae
-              maxime. A esse tenetur corrupti sunt eveniet minus quas
-              repellendus quaerat. Optio quaerat et incidunt unde aliquam quas
-              delectus labore ullam consectetur ipsa, eveniet impedit debitis
-              magnam cum reprehenderit! A consectetur quam quasi sunt porro at
-              maiores impedit, adipisci itaque dignissimos.
+              I've been interested in programming since I was a kid in my early
+              high school years. Initially, I put my small amount of skills to
+              use when I was around 12 years old, making mods for Minecraft.
+              This initial interest eventually led me to take Computer Science
+              at GCSE, A-Level, and now University, and I can confidently say
+              I've enjoyed every minute of it.
             </p>
             <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Accusamus cum tempore itaque alias, qui expedita eius blanditiis
-              tempora fugit et, sint sapiente, saepe nostrum ab voluptatibus
-              ullam! Quae, molestias voluptatum! Cupiditate ratione nobis porro
-              voluptatum vitae accusantium quae possimus, fugit animi
-              repudiandae, fugiat id! Esse molestias magni voluptas reiciendis
-              magnam harum ipsa saepe, incidunt perspiciatis porro non beatae
-              fugit obcaecati.
+              I started learning web development specifically after taking a
+              university module involving databases, SQL, and PHP. I found it
+              fairly enjoyable, so I continued learning other web technologies
+              on my own, where I discovered a keen interest in building
+              applications using technologies such as React, NextJS, and
+              TailwindCSS. It's been an interesting journey so far!
+            </p>
+            <p>
+              Outside of the tech world, you may catch me playing a video game
+              here or there, as well as watching and attending esports events.
+              I've been a Manchester City fan since I was little, and I often
+              attend home games with my dad and brother. I also enjoy going to
+              the gym, playing five-a-side football, and spending time with my
+              dog, Vincent.
             </p>
           </div>
         </div>
