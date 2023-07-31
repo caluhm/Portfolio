@@ -40,11 +40,24 @@
   .section-header:hover::after {
     @apply w-0;
   }
+
+  .plane img {
+    box-shadow:
+      0 4px 6px rgba(49, 54, 68, 0.05),
+      0 5px 20px rgba(49, 54, 68, 0.08);
+  }
+
+  .about-image-vertical {
+    @apply w-[125px] sm:w-[150px] md:w-[175px] lg:w-[200px] xl:w-[225px] 2xl:w-[275px];
+  }
+
+  .about-image-horizontal {
+    @apply w-[175px] sm:w-[220px] md:w-[275px] lg:w-[300px] xl:w-[325px] 2xl:w-[350px];
+  }
 }
 
 .app /* resulting css */ {
-  background:
-    linear-gradient(
+  background: linear-gradient(
       to bottom right,
       rgba(0, 255, 209, 0.5),
       rgba(170, 70, 252, 0.69)
@@ -61,4 +74,69 @@
 
 html {
   scroll-behavior: smooth;
+}
+
+.plane {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+
+.plane img {
+  position: absolute;
+  z-index: 1;
+  transition: transform 0.3s ease-in-out;
+}
+
+.plane:nth-last-of-type(1) {
+  filter: brightness(0.7);
+}
+
+.plane:nth-last-of-type(1) img:nth-last-of-type(1) {
+  left: 28%;
+  top: 6%;
+}
+
+.plane:nth-last-of-type(1) img:nth-last-of-type(2) {
+  left: 5%;
+  top: 53%;
+}
+
+.plane:nth-last-of-type(2) {
+  filter: brightness(0.85);
+}
+
+.plane:nth-last-of-type(2) img:nth-last-of-type(1) {
+  left: 80%;
+  top: 55%;
+}
+
+.plane:nth-last-of-type(2) img:nth-last-of-type(2) {
+  left: 83%;
+  top: 5%;
+}
+
+.plane:nth-last-of-type(2) img:nth-last-of-type(3) {
+  left: 51%;
+  top: 62%;
+}
+
+.plane:nth-last-of-type(3) {
+  filter: brightness(1);
+}
+
+.plane:nth-last-of-type(3) img:nth-last-of-type(1) {
+  left: 60%;
+  top: 2.5%;
+}
+
+.plane:nth-last-of-type(3) img:nth-last-of-type(2) {
+  left: 3%;
+  top: 5%;
+}
+
+.plane:nth-last-of-type(3) img:nth-last-of-type(3) {
+  left: 28%;
+  top: 59%;
 }

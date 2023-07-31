@@ -12,7 +12,6 @@ export default function ProjectSection() {
             <ProjectCard
               key={i}
               Title={project.title}
-              Url={project.url}
               LiveLink={project.livelink}
               GitHubLink={project.gitlink}
               Image={project.image}
@@ -23,4 +22,4 @@ export default function ProjectSection() {
       </div>
     </SectionContainer>
   );
-};
+}
