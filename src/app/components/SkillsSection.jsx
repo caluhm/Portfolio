@@ -21,8 +21,8 @@ export default function SkillsSection() {
             <button
               className={`rounded-md border-2 border-sky-500 bg-sky-500 px-3 py-1 text-center text-lg font-medium text-neutral-950 dark:border-indigo-500 dark:bg-indigo-500 dark:text-neutral-50 sm:px-4 sm:py-2 ${
                 isFrontEndSelected
-                  ? "border-sky-300 bg-sky-500 dark:border-indigo-300 dark:bg-indigo-500"
-                  : "bg-transparent dark:bg-transparent"
+                  ? "border-sky-300 bg-sky-500 hover:bg-sky-400 dark:border-indigo-300 dark:bg-indigo-500 hover:dark:bg-indigo-600"
+                  : "bg-transparent hover:bg-sky-400 dark:bg-transparent dark:hover:bg-indigo-600"
               }`}
               onClick={() => setIsFrontEndSelected(!isFrontEndSelected)}
             >
@@ -31,8 +31,8 @@ export default function SkillsSection() {
             <button
               className={`rounded-md border-2 border-sky-500 bg-sky-500 px-3 py-1 text-center text-lg font-medium text-neutral-950 dark:border-indigo-500 dark:bg-indigo-500 dark:text-neutral-50 sm:px-4 sm:py-2 ${
                 isBackEndSelected
-                  ? "border-sky-300 bg-sky-500 dark:border-indigo-300 dark:bg-indigo-500"
-                  : "bg-transparent dark:bg-transparent"
+                  ? "border-sky-300 bg-sky-500 hover:bg-sky-400 dark:border-indigo-300 dark:bg-indigo-500 hover:dark:bg-indigo-600"
+                  : "bg-transparent hover:bg-sky-400 dark:bg-transparent dark:hover:bg-indigo-600"
               }`}
               onClick={() => setIsBackEndSelected(!isBackEndSelected)}
             >
@@ -41,8 +41,8 @@ export default function SkillsSection() {
             <button
               className={`rounded-md border-2 border-sky-500 bg-sky-500 px-3 py-1 text-center text-lg font-medium text-neutral-950 dark:border-indigo-500 dark:bg-indigo-500 dark:text-neutral-50 sm:px-4 sm:py-2 ${
                 isExtrasSelected
-                  ? "border-sky-300 bg-sky-500 dark:border-indigo-300 dark:bg-indigo-500"
-                  : "bg-transparent dark:bg-transparent"
+                  ? "border-sky-300 bg-sky-500 hover:bg-sky-400 dark:border-indigo-300 dark:bg-indigo-500 hover:dark:bg-indigo-600"
+                  : "bg-transparent hover:bg-sky-400 dark:bg-transparent dark:hover:bg-indigo-600"
               }`}
               onClick={() => setIsExtrasSelected(!isExtrasSelected)}
             >
