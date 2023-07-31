@@ -15,7 +15,7 @@ export default function SkillsSection() {
       colouredBg
     >
       <div className="flex h-full w-full flex-col items-center justify-center pt-6 sm:pt-12">
-        <h3 className="section-header">Skills</h3>
+        <h3 className="section-header">My Skills</h3>
         <div className="flex w-full flex-col items-center justify-center gap-6 px-3 py-16 sm:px-5">
           <aside className="flex flex-row gap-4">
             <button

@@ -34,7 +34,7 @@
   }
 
   .section-header::after {
-    @apply absolute -bottom-[8px] left-0 h-[4px] w-full rounded-xl bg-sky-500 transition-all duration-300 ease-in-out content-[''] dark:bg-indigo-500 sm:-bottom-[16px];
+    @apply absolute -bottom-[8px] left-0 h-[4px] w-full rounded-xl bg-sky-500 transition-all duration-300 ease-in-out content-[''] dark:bg-indigo-500 sm:-bottom-[12px];
   }
 
   .section-header:hover::after {

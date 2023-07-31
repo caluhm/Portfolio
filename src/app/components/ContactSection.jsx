@@ -4,10 +4,9 @@ export default function ContactSection() {
   return (
     <SectionContainer
       id="contact"
-      customHeight={"min-h-screen sm:min-h-[75vh]"}
       colouredBg
     >
-      <h3 className="section-header">Contact</h3>
+      <h3 className="section-header">Contact Me</h3>
     </SectionContainer>
   );
 };
