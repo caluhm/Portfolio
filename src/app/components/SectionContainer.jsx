@@ -5,6 +5,7 @@ export default function SectionContainer({
   customJustify,
   colouredBg,
   relative,
+  noPadding,
 }) {
   return (
     <section
@@ -13,7 +14,9 @@ export default function SectionContainer({
         customHeight ? customHeight : "min-h-screen"
       } w-full flex-col items-center ${
         customJustify ? customJustify : "justify-start"
-      } pt-16 ${colouredBg ? "bg-sky-200 dark:bg-indigo-950" : ""}
+      } ${noPadding ? "" : "pt-16"} ${
+        colouredBg ? "bg-sky-200 dark:bg-indigo-950" : ""
+      }
       ${relative ? "relative z-10" : ""}
       overflow-hidden`}
     >
