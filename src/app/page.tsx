@@ -26,7 +26,7 @@ export default function Home() {
     setTheme(theme === "light" ? "dark" : "light");
   };
 
-  const manageMouseMove = (e: MouseEvent<HTMLElement, MouseEvent>) => {
+  const manageMouseMove = (e: any) => {
     const { movementX, movementY } = e;
     setMovementX(movementX);
     setMovementY(movementY);
