@@ -62,7 +62,9 @@ export default function HeroSection() {
               </h3>
             </div>
             <div className="flex flex-col items-center justify-center gap-4 text-sm font-medium text-neutral-950 dark:text-neutral-50 sm:flex-row sm:gap-3 sm:text-base">
-              <a className="flex w-fit cursor-pointer flex-row items-center justify-center rounded-full bg-sky-500 px-4 py-2 drop-shadow-md transition-colors duration-200 ease-in-out hover:bg-sky-400 dark:bg-indigo-500 dark:hover:bg-indigo-600">
+              <a 
+              href="/CV.pdf" download
+              className="flex w-fit cursor-pointer flex-row items-center justify-center rounded-full bg-sky-500 px-4 py-2 drop-shadow-md transition-colors duration-200 ease-in-out hover:bg-sky-400 dark:bg-indigo-500 dark:hover:bg-indigo-600">
                 Download CV
                 <span className="ml-2">
                   <LiaDownloadSolid className="text-xl" />
