@@ -8,7 +8,7 @@ export const projects = [
   },
   {
     title: "RLE Guessr",
-    image: "https://i.gyazo.com/ade1a519356771b26a4ec43a7623503a.png",
+    image: "https://i.gyazo.com/1e0f3addfbdb33e24cea4fbbac01bf0e.png",
 
     gitlink: "https://github.com/caluhm/rleguessr",
     livelink: "https://rleguessr.app/",
