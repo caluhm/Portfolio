@@ -1,7 +1,7 @@
-'use client'
+"use client";
 
 import { useState } from "react";
-
+import MobileNav from "./MobileNav";
 import { MdLightMode, MdDarkMode, MdClose } from "react-icons/md";
 import { BiMenuAltRight } from "react-icons/bi";
 
@@ -71,58 +71,11 @@ export default function Navbar({ theme, handleThemeSwitch }) {
         </div>
       </div>
       {isMobileMenuOpen && (
-        <div
-          className={`h-[calc(100vh-4rem)] w-screen bg-neutral-100 transition-opacity duration-300 ease-in-out dark:bg-neutral-900`}
-        >
-          <ul className="flex h-full flex-col items-center justify-center space-y-6 text-2xl font-semibold text-neutral-950 dark:text-neutral-50">
-            <li>
-              <a
-                href="#home"
-                className="nav-item"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                Home
-              </a>
-            </li>
-            <li>
-              <a
-                href="#about"
-                className="nav-item"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                About
-              </a>
-            </li>
-            <li>
-              <a
-                href="#skills"
-                className="nav-item"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                Skills
-              </a>
-            </li>
-            <li>
-              <a
-                href="#projects"
-                className="nav-item"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                Projects
-              </a>
-            </li>
-            <li>
-              <a
-                href="#contact"
-                className="nav-item"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                Contact
-              </a>
-            </li>
-          </ul>
-        </div>
+        <MobileNav
+          isOpen={isMobileMenuOpen}
+          handleClose={() => setIsMobileMenuOpen(false)}
+        />
       )}
     </nav>
   );
-};
+}
