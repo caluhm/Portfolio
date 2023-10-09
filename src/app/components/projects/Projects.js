@@ -24,7 +24,6 @@ export const projects = [
   {
     title: "Braindash",
     image: "https://i.gyazo.com/2656a3ecc47e64396e4094ed68b79688.png",
-
     gitlink: "https://github.com/caluhm/braindash",
     livelink: "https://braindash.vercel.app/",
     techstack: ["NextJS", "React", "Tailwind"],
@@ -32,16 +31,15 @@ export const projects = [
   {
     title: "Portfolio",
     image: "https://i.gyazo.com/046c890a8b20596d78388ec3e5abb7de.png",
-
     gitlink: "https://github.com/caluhm/personal-portfolio",
     livelink: "https://calumjarvis.dev/",
     techstack: ["React", "Tailwind", "Themes"],
   },
   {
-    title: "UTrack",
-    image: "https://i.gyazo.com/71ae780c75eb66d98c1b9c7c8c5d8deb.png",
-    gitlink: "https://github.com/caluhm/UTrack",
-    livelink: "https://utrack.netlify.app/",
-    techstack: ["React", "Tailwind", "Bootstrap"],
+    title: "Course Platform (WIP)",
+    image: "https://i.gyazo.com/b53f6cfb4a54f0e39cfbd561fc3d9805.png",
+    gitlink: "https://github.com/caluhm/course-platform",
+    livelink: "https://course-platform-ten-rust.vercel.app/",
+    techstack: ["NextJS", "Tailwind", "Prisma"],
   },
 ];
